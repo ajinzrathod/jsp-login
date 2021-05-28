@@ -1,0 +1,8 @@
+package com.ajinz;
+
+public class login extends HttpServlet{
+	protected void doPost{
+		
+	}
+
+}

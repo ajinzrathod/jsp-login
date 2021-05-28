@@ -1,0 +1,11 @@
+package com.ajinz;
+
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpSession;
+
+public class Logout extends HttpServlet{
+	protected void service() {
+		HttpSession session = null;
+		session.invalidate(); 
+	}
+}

@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/home/ajinkya/Documents/Servlet/login/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3540009638.index
+722610765.index
+2120214175.index
+271078239.index
+2407933413.index
+456774729.index

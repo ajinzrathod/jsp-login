@@ -1,0 +1,24 @@
+//package com.ajinz;
+//
+//import java.io.IOException;
+//
+//import org.apache.catalina.connector.Response;
+//
+//import jakarta.servlet.annotation.WebServlet;
+//import jakarta.servlet.http.HttpServlet;
+//import jakarta.servlet.http.HttpServletRequest;
+//import jakarta.servlet.http.HttpServletResponse;
+//
+//@WebServlet("/login")
+//public class login extends HttpServlet{
+//	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException{
+//		String username = req.getParameter("username");
+//		String password = req.getParameter("password");
+//		if(username.equals("admin") && password.equals("admin")) {
+//			res.sendRedirect("/login/welcome");
+//		}
+//		else {
+//			res.sendRedirect("/");
+//		}
+//	}
+//}

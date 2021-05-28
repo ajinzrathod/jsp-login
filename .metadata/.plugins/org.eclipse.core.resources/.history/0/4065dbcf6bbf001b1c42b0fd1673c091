@@ -1,0 +1,17 @@
+package com.ajinz;
+
+import org.apache.catalina.connector.Response;
+
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class login extends HttpServlet{
+	protected void doPost(HttpServletRequest req, HttpServletResponse res){
+		String username = req.getParameter("username");
+		String password = req.getParameter("password");
+		if(username.equals("admin") && password.equals("admin")) {
+			res.sendRedirect("welcome.jsp");
+		}
+	}
+}

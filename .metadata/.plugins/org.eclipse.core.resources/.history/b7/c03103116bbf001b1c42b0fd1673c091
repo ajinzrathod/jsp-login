@@ -1,0 +1,9 @@
+package com.ajinz;
+
+import jakarta.servlet.http.HttpServlet;
+
+public class login extends HttpServlet{
+	protected void doPost(){
+		
+	}
+}

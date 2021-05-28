@@ -1,0 +1,50 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.inp-field {
+	display: block;
+	padding: 5px;
+	margin: 5px;
+}
+</style>
+</head>
+<body>
+
+	<c:if test="${not empty can_login}">
+		<p>Can login value 1 : ${can_login}</p>
+	</c:if>
+	<c:if test="${empty can_login}">
+		<p>2 Jaathi mcn Jaathi</p>
+	</c:if>
+	
+	<c:if test=${can_login.equals("true") }>
+		<p>Can login value 3: ${can_login}</p>
+	</c:if>
+	
+	<c:if test=${not can_login.equals("true") }>
+		<p>Can login value 4: ${can_login}</p>
+	</c:if>
+
+
+	<c:choose>
+		<c:when test="${param.username == null}">
+			<div>
+				<form action="login" method="post">
+					Username: <input type="text" name="username" class="inp-field">
+					Password: <input type="password" name="password" class="inp-field">
+					<input type="submit" class="inp-field" value="Login">
+				</form>
+			</div>
+		</c:when>
+		<c:otherwise>
+	   		Invalid ID Password
+	   </c:otherwise>
+	</c:choose>
+</body>
+</html>

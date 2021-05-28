@@ -1,0 +1,15 @@
+package com.ajinz;
+
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpSession;
+
+public class Logout extends HttpServlet{
+	public void service()if (request.getParameter("logout") != null) {  
+	    session.invalidate();
+	    response.sendRedirect("restanes.jsp");
+	    return; // <--- Here.
+	} {
+		HttpSession session = null;
+		session.invalidate(); 
+	}
+}

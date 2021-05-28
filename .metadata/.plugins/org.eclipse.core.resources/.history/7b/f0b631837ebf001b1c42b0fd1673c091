@@ -1,0 +1,14 @@
+package com.ajinz;
+
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
+public class Logout extends HttpServlet{
+	public void service(HttpServletRequest req, HttpServletResponse res) {
+		HttpSession session = null;
+		session.invalidate();
+	    res.sendRedirect("/login");
+	}
+}
